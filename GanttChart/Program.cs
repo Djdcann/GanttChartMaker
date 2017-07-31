@@ -40,14 +40,16 @@ namespace GanttChart
 
                 Console.WriteLine("");
                 Console.WriteLine("Gantt Chart calculations for {0} successfull!", gantt.algo);
+           
+                //print segments to console
                 gantt.print();
 
                 Console.WriteLine("");
 
-                //make html
+                //make html page for gantt chart visual
                 gantt.html();
 
-                //again?
+                //run again?
                 Console.WriteLine("");
                 Console.Write("Would you like to create another Gantt Chart? (y/n) ");
                 c = Console.ReadKey().KeyChar;
@@ -70,10 +72,10 @@ namespace GanttChart
             Console.WriteLine("[c] = SCF");
             Console.WriteLine("[r] = RR");
 
-            //string s = Console.ReadLine();
             char c = Console.ReadKey().KeyChar;
             Console.WriteLine("");
 
+            //verify character
             switch (c)
             {
                 case 'f':

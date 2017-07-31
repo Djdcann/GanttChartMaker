@@ -24,6 +24,7 @@ namespace GanttChart
         {
             int input;
 
+            //set name with incremented static var
             name = String.Format("P{0}", ++num);
 
             Console.WriteLine("Enter details for Process {0}:", name);
@@ -68,6 +69,7 @@ namespace GanttChart
             turnaroundTime = 0;
         }
 
+        //if process has arrived
         public bool isAvailable(int currentTime)
         {
             return arrivalTime <= currentTime;
@@ -102,11 +104,13 @@ namespace GanttChart
             }
         }
 
+        //return remaining time
         public int timeLeft()
         {
             return burstTime - runTime;
         }
 
+        //reset the staic num
         public void resetNum()
         {
             num = 0;

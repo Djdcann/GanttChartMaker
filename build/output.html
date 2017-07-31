@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Dank</title>
+    <title>Dank Chart</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -20,6 +20,7 @@
             border: 1px solid gray;
             padding:5px 0px 5px 0px;
         }
+        /* box styling for idle segment */
         .Idle {
             background: repeating-linear-gradient( -55deg, #bbb, #bbb 5px, #aaa 5px, #aaa 10px );
         }
@@ -32,6 +33,7 @@
         <h2>Process Information</h2>
         <div class="row">
             <div class="col-md-6">
+                <!-- Process table -->
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
@@ -49,6 +51,7 @@
                 </table>
             </div>
             <div class="col-md-6">
+                <!-- Process time information table -->
                 <table class="table">
                     <tr><th>Average wait time:</th><td>[S4]</td></tr>
                     <tr><th>Average Turnaround time:</th><td>[S5]</td></tr>
@@ -57,6 +60,7 @@
         </div>
         <hr />
         <h2>Gantt Chart - [S6]</h2>
+        <!-- Gantt Chart table -->
         <table align="center">
             <tr id="gantt">
                 [S1]
@@ -68,6 +72,7 @@
         <br />
         <br />
         <br />
+        <!-- Solid Reccommendation -->
         <div>Give Derek an A</div>
     </div>
 </body>
